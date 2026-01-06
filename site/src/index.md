@@ -7,7 +7,7 @@ toc: false
 
 **Región Litoral Centro · Entre Ríos y Santa Fe**  
 Relevamiento y análisis de conflictos laborales y mercado de trabajo  
-**Actualización automática cada 12 horas**
+**Actualización cada 12 horas**
 
 ---
 
@@ -15,7 +15,7 @@ Relevamiento y análisis de conflictos laborales y mercado de trabajo
 
 ORCYT es un observatorio académico dedicado al relevamiento sistemático, procesamiento y análisis de la conflictividad laboral y las dinámicas del mercado de trabajo en la Región Litoral Centro, con foco en las provincias de Entre Ríos y Santa Fe.
 
-El observatorio articula técnicas de scraping automatizado de fuentes periodísticas, depuración y codificación de eventos, y construcción de indicadores agregados, con el objetivo de producir información pública, transparente y reproducible sobre el conflicto capital–trabajo en escala regional.
+El observatorio articula técnicas de scraping automatizado de fuentes periodísticas digitales, depuración y codificación de eventos, y construcción de indicadores agregados, con el objetivo de producir información pública y reproducible sobre el conflicto capital–trabajo en escala regional.
 
 ---
 
@@ -40,4 +40,12 @@ Los conflictos se codifican como **unidades relacionales** (secuencias de accion
 
 ---
 
-> **Nota metodológica:** El relevamiento automatizado depende de la disponibilidad de fuentes periodísticas y puede presentar rezagos o duplicaciones; se implementan rutinas de depuración y controles de calidad para mitigar sesgos.
+## Nota metodológica
+
+El relevamiento automatizado depende de la disponibilidad de fuentes periodísticas y puede presentar rezagos o duplicaciones; se implementan rutinas de depuración y controles de calidad para mitigar sesgos.
+> ---
+
+## Indicadores
+
+La evolución diaria de la conflictividad laboral y otras desagregaciones se encuentran disponibles en la sección **[Indicadores](./indicadores)**.
+```
