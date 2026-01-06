@@ -45,7 +45,18 @@ Los conflictos se codifican como **unidades relacionales** (secuencias de accion
 El relevamiento automatizado depende de la disponibilidad de fuentes periodísticas y puede presentar rezagos o duplicaciones; se implementan rutinas de depuración y controles de calidad para mitigar sesgos.
 > ---
 
-## Indicadores
+## 📊 Indicadores
+Accedé a las series y desagregaciones disponibles en la sección  
+👉 **[Indicadores](./indicadores)**
 
-La evolución diaria de la conflictividad laboral y otras desagregaciones se encuentran disponibles en la sección **[Indicadores](./indicadores)**.
+---
+
+## 🧠 Metodología
+La estrategia de relevamiento, codificación y construcción de indicadores se detalla en  
+👉 **[Metodología](./metodologia)**
+
+---
+
+## 📅 Actualización
+Los datos publicados corresponden al último corte disponible del relevamiento.
 ```

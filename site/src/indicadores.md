@@ -1,3 +1,8 @@
+---
+title: Indicadores
+toc: true
+---
+
 ```js
 import * as Plot from "npm:@observablehq/plot";
 
