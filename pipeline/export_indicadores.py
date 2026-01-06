@@ -2,7 +2,8 @@ import pandas as pd
 from pathlib import Path
 
 # Ruta al CSV final generado por el repo de scraping clonado por Actions
-INPUT = Path("tmp_scraper/data/conflictos_clasificados.csv")
+INPUT = Path("data/conflictos_clasificados.csv")
+
 
 # Carpeta pública del sitio (se versiona)
 OUTDIR = Path("site/src/data")
