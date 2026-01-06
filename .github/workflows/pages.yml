@@ -25,6 +25,15 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+      
+      - name: Debug list files
+        run: |
+          pwd
+          ls -la
+          echo "---- pipeline ----"
+          ls -la pipeline || true
+          echo "---- tree (depth 2) ----"
+          find . -maxdepth 2 -type f | sort
 
       - name: Setup Python
         uses: actions/setup-python@v5
