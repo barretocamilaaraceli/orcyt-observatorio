@@ -29,6 +29,7 @@ export default {
 `,
 
   header: `
+  <div class="topband"></div>
 <div class="navbar">
   <div class="wrap navrow navrow-brandonly">
     <a class="brand" href="./">

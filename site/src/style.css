@@ -433,4 +433,22 @@ main{
   border-top: none !important;
 }
 
+/* ===== Franja superior minimal ===== */
+.topband{
+  height: 7px;
+  background: #3f3a35; /* mismo topo del footer */
+}
+/* Tipografía más aireada */
+main p{ line-height: 1.65; }
+
+/* Separación entre secciones */
+main h2{ margin-top: 26px; }
+main h3{ margin-top: 18px; }
+
+/* Tarjetas un toque más “premium” */
+.card{
+  border-radius: 16px;
+}
+
+
 
