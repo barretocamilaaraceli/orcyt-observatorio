@@ -253,3 +253,12 @@ header,
   justify-content: flex-start;
   padding: 16px 0;
 }
+/* Header normal: no se queda pegado arriba, no tapa contenido */
+.navbar{
+  position: static !important;
+  top: auto !important;
+}
+@media (max-width: 700px){
+  .logo{ height: 48px; }
+  .brandsub{ display: none; }
+}
