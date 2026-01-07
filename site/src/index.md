@@ -2,7 +2,6 @@
 toc: false
 ---
 
-## ORCYT
 ## Observatorio Regional de Conflictividad y Trabajo
 
 **Región Litoral Centro · Entre Ríos y Santa Fe**  

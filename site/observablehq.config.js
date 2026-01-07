@@ -1,8 +1,6 @@
 // See https://observablehq.com/framework/config for documentation.
 export default {
-  // Corto para que el sidebar no quede feo
-  title: "ORCYT",
-
+  title: "ORCyT",
   root: "src",
 
   pages: [
@@ -14,10 +12,8 @@ export default {
   search: true,
   toc: true,
 
-  // Activamos CSS propio
-  style: "style.css",
-
- head: `
+  // Cargamos CSS propio (desde dist/style.css, lo vamos a copiar en postbuild)
+  head: `
 <link rel="icon" href="favicon.ico">
 <link rel="icon" type="image/png" href="favicon-32.png" sizes="32x32">
 <link rel="icon" type="image/png" href="favicon-96.png" sizes="96x96">

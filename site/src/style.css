@@ -2,7 +2,7 @@
   display:flex;
   align-items:center;
   padding: 14px 0;
-  border-bottom: 1px solid rgba(0,0,0,.08);
+  border-bottom: 1px solid rgba(0,0,0,.10);
   margin-bottom: 10px;
 }
 
@@ -15,7 +15,7 @@
 }
 
 .orcyt-logo{
-  height: 64px;   /* SUBÍ ACÁ EL TAMAÑO */
+  height: 64px;   /* acá se ve “observatorio”, no estampita */
   width: auto;
   display:block;
 }
@@ -24,15 +24,18 @@
   font-weight: 800;
   font-size: 20px;
   line-height: 1.05;
+  letter-spacing: .2px;
 }
 
 .orcyt-subtitle{
   font-size: 13px;
+  line-height: 1.2;
   opacity: .75;
   margin-top: 2px;
 }
-.orcyt-nav{
-  margin-left:auto;
-  display:flex;
-  gap: 16px;
+
+.orcyt-footer{
+  padding: 14px 0;
+  font-size: 12px;
+  opacity: .85;
 }
