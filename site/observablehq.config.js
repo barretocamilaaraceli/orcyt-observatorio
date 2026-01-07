@@ -15,15 +15,7 @@ export default {
 <link rel="stylesheet" href="style.css">
 `,
 
-  header: `
-<div class="topstrip">
-  <div class="wrap">
-    <span class="muted">ORCYT · Observatorio regional (ER–SF)</span>
-    <span class="sep">·</span>
-    <a href="mailto:orcyt.observatorio@gmail.com">orcyt.observatorio@gmail.com</a>
-  </div>
-</div>
-
+ header: `
 <div class="navbar">
   <div class="wrap navrow">
     <a class="brand" href="./">
@@ -43,9 +35,12 @@ export default {
 </div>
 `,
 
-  footer: `
+footer: `
 <div class="wrap footer">
-  <b>ORCYT</b> · Datos y contenidos: CC BY 4.0 · Código: MIT
+  <div class="footer-row">
+    <span><b>ORCYT</b> · Datos y contenidos: CC BY 4.0 · Código: MIT</span>
+    <a href="mailto:orcyt.observatorio@gmail.com">orcyt.observatorio@gmail.com</a>
+  </div>
 </div>
 `
 };
