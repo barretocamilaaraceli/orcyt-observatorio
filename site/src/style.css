@@ -318,4 +318,47 @@ main{
   padding-left: 0 !important;
   padding-right: 0 !important;
 }
+/* ===== FIX: contenido corrido a la izquierda (gutter de sidebar fantasma) ===== */
+
+:root{
+  --page-max: 920px;
+  --page-pad: 18px;
+  --sidebar-width: 0px; /* por si el theme reserva columna */
+}
+
+/* Si el framework arma un grid con sidebar+content, lo colapsamos */
+.observablehq-layout,
+.observablehq-page,
+.observablehq-container,
+.observablehq-body{
+  grid-template-columns: 0px 1fr !important;
+}
+
+/* Ocultar cualquier sidebar residual */
+.observablehq-sidebar,
+#observablehq-sidebar{
+  display: none !important;
+}
+
+/* Centrar el “cuerpo” real del contenido */
+main,
+.observablehq-main,
+#observablehq-main,
+.observablehq-content,
+#observablehq-content{
+  max-width: var(--page-max) !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  padding-left: var(--page-pad) !important;
+  padding-right: var(--page-pad) !important;
+}
+
+/* Alinear header/footer con la misma columna */
+.navbar .wrap,
+.footer .wrap,
+.wrap.footer{
+  max-width: var(--page-max) !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
 
