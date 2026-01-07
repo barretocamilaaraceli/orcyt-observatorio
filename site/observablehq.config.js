@@ -1,7 +1,13 @@
 // See https://observablehq.com/framework/config for documentation.
 export default {
-  title: "ORCyT",
+  title: "ORCYT",
   root: "src",
+
+  // Apagamos sidebar para que el menú sea el protagonista
+  sidebar: false,
+  toc: false,
+  theme: "light",
+  search: true,
 
   pages: [
     { name: "Indicadores", path: "/indicadores" },
@@ -13,25 +19,12 @@ export default {
   toc: true,
 
   // Cargamos CSS propio (desde dist/style.css, lo vamos a copiar en postbuild)
-  head: `
+    head: `
 <link rel="icon" href="favicon.ico">
 <link rel="icon" type="image/png" href="favicon-32.png" sizes="32x32">
 <link rel="icon" type="image/png" href="favicon-96.png" sizes="96x96">
 <link rel="apple-touch-icon" href="apple-touch-icon.png" sizes="180x180">
 <link rel="stylesheet" href="style.css">
-`,
-
-  header: `
-<div class="orcyt-topbar">
-  <a class="orcyt-brand" href="./">
-    <img class="orcyt-logo" src="orcyt-logo.png" alt="ORCYT">
-    <div class="orcyt-brandtext">
-      <div class="orcyt-name">ORCYT</div>
-      <div class="orcyt-subtitle">Observatorio Regional de Conflictividad y Trabajo</div>
-    </div>
-  </a>
-</div>
-
 
 <style>
   /* Header ORCYT: que no herede azul de links */
@@ -39,17 +32,45 @@ export default {
   .orcyt-topbar a:visited,
   .orcyt-topbar a:hover,
   .orcyt-topbar a:active{
-    color: #292828ff !important;
+    color: #2b2b2b !important;
     text-decoration: none !important;
   }
   .orcyt-name{
-    color: #962828ff !important;
+    color: #2b2b2b !important;
   }
 </style>
 `,
 
+  header: `
+<div class="topstrip">
+  <div class="wrap">
+    <span class="muted">ORCYT · Observatorio regional (ER–SF)</span>
+    <span class="sep">·</span>
+    <a href="mailto:orcyt.observatorio@gmail.com">orcyt.observatorio@gmail.com</a>
+  </div>
+</div>
+
+<div class="navbar">
+  <div class="wrap navrow">
+    <a class="brand" href="./">
+      <img class="logo" src="orcyt-logo.png" alt="ORCYT">
+      <span class="brandtext">
+        <span class="brandname">ORCYT</span>
+        <span class="brandsub">Observatorio Regional de Conflictividad y Trabajo</span>
+      </span>
+    </a>
+
+    <nav class="menu">
+      <a href="./indicadores">Indicadores</a>
+      <a href="./metodologia">Metodología</a>
+      <a href="https://github.com/barretocamilaaraceli/orcyt-observatorio" target="_blank" rel="noreferrer">Repositorio</a>
+    </nav>
+  </div>
+</div>
+`,
+
   footer: `
-<div class="orcyt-footer">
+<div class="wrap footer">
   <b>ORCYT</b> · Datos y contenidos: CC BY 4.0 · Código: MIT
 </div>
 `
