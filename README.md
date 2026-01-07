@@ -27,5 +27,16 @@ Requisitos: Node.js >= 18.
 ```bash
 cd site
 npm install
+
+cd site
+npm run build
+```
+
+## Publicación
+El sitio se publica con GitHub Pages a partir del contenido generado por el build del sitio en site/dist.
+
+## Licencias
+Código: MIT
+Datos e indicadores: CC BY 4.0 (atribución obligatoria)
 npm run dev
 
