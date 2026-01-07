@@ -361,4 +361,24 @@ main,
   margin-left: auto !important;
   margin-right: auto !important;
 }
+/* ===== Texto justificado y sin cortes raros ===== */
+
+/* Párrafos: justificado */
+main p,
+main li{
+  text-align: justify;
+  text-justify: inter-word;
+  hyphens: auto;
+  overflow-wrap: break-word;
+  word-break: normal;
+}
+
+/* Español: ayuda a que hyphens funcione mejor */
+html{ lang: es; }
+
+/* Evitar que títulos/links rompan feo */
+main h1, main h2, main h3, main h4,
+main a{
+  overflow-wrap: anywhere;
+}
 
