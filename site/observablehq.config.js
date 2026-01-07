@@ -22,6 +22,10 @@ export default {
 <link rel="icon" type="image/png" href="favicon-96.png" sizes="96x96">
 <link rel="apple-touch-icon" href="apple-touch-icon.png" sizes="180x180">
 <link rel="stylesheet" href="style.css">
+<script>
+  document.title = "Observatorio Regional de Conflictividad y Trabajo — ORCYT";
+</script>
+
 `,
 
  header: `
