@@ -39,7 +39,7 @@ export default {
   .orcyt-topbar a:visited,
   .orcyt-topbar a:hover,
   .orcyt-topbar a:active{
-    color: #2b2b2b !important;
+    color: #bb3939ff !important;
     text-decoration: none !important;
   }
   .orcyt-name{
