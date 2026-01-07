@@ -1,1 +1,18 @@
 tmp_scraper/
+# Node / Observable
+site/node_modules/
+site/src/.observablehq/cache/
+site/dist/_observablehq/
+site/dist/_npm/
+site/dist/_file/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
