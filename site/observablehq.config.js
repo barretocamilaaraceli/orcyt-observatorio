@@ -23,7 +23,9 @@ export default {
 <link rel="apple-touch-icon" href="apple-touch-icon.png" sizes="180x180">
 <link rel="stylesheet" href="style.css">
 <script>
-  document.title = "Observatorio Regional de Conflictividad y Trabajo — ORCYT";
+  const TITLE = "Observatorio Regional de Conflictividad y Trabajo — ORCYT";
+  document.title = TITLE;
+  setTimeout(() => { document.title = TITLE; }, 0);
 </script>
 
 `,
