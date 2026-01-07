@@ -1,38 +1,35 @@
 // See https://observablehq.com/framework/config for documentation.
 export default {
-  // The app’s title; used in the sidebar and webpage titles.
-  title: "orcyt-site",
-
-  // The pages and sections in the sidebar. If you don’t specify this option,
-  // all pages will be listed in alphabetical order. Listing pages explicitly
-  // lets you organize them into sections and have unlisted pages.
-  // pages: [
-  //   {
-  //     name: "Examples",
-  //     pages: [
-  //       {name: "Dashboard", path: "/example-dashboard"},
-  //       {name: "Report", path: "/example-report"}
-  //     ]
-  //   }
-  // ],
-
-  // Content to add to the head of the page, e.g. for a favicon:
-  head: '<link rel="icon" href="observable.png" type="image/png" sizes="32x32">',
-
-  // The path to the source root.
+  title: "ORCYT — Observatorio Regional de Conflictividad y Trabajo",
   root: "src",
 
-  // Some additional configuration options and their defaults:
-  // theme: "default", // try "light", "dark", "slate", etc.
-  // header: "", // what to show in the header (HTML)
-  // footer: "Built with Observable.", // what to show in the footer (HTML)
-  // sidebar: true, // whether to show the sidebar
-  // toc: true, // whether to show the table of contents
-  // pager: true, // whether to show previous & next links in the footer
-  // output: "dist", // path to the output root for build
-  // search: true, // activate search
-  // linkify: true, // convert URLs in Markdown to links
-  // typographer: false, // smart quotes and other typographic improvements
-  // preserveExtension: false, // drop .html from URLs
-  // preserveIndex: false, // drop /index from URLs
+  // (Opcional) dejá el sidebar explícito, así no vuelven ejemplos
+  pages: [
+    { name: "Indicadores", path: "/indicadores" },
+    { name: "Metodología", path: "/metodologia" }
+  ],
+
+  head: `
+<link rel="icon" href="favicon.ico">
+<link rel="icon" type="image/png" href="favicon-32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="favicon-96.png" sizes="96x96">
+<link rel="apple-touch-icon" href="apple-touch-icon.png" sizes="180x180">
+`,
+
+  header: `
+<div style="display:flex;align-items:center;gap:.6rem;padding:.6rem 0;">
+  <a href="./" style="display:flex;align-items:center;gap:.6rem;text-decoration:none;font-weight:800;">
+    <img src="orcyt-logo.png" alt="ORCYT" height="28" style="display:block;">
+    <span>ORCYT</span>
+  </a>
+</div>
+`,
+
+  footer: `
+<div style="padding:.75rem 0; font-size: 12px;">
+  <b>ORCYT</b> · Datos y contenidos: CC BY 4.0 · Código: MIT
+</div>
+`
 };
+
+
