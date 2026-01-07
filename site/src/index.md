@@ -3,6 +3,25 @@ toc: false
 ---
 
 ## Observatorio Regional de Conflictividad y Trabajo
+<div class="badge" id="orcyt-lastcut-home">Último corte: cargando…</div>
+
+<script type="module">
+(async () => {
+  const el = document.getElementById('orcyt-lastcut-home');
+  if (!el) return;
+  try {
+    const res = await fetch('./data/serie_diaria.json', { cache: 'no-store' });
+    const data = await res.json();
+    const pickDate = (obj) => (obj && (obj.fecha || obj.date || obj.datetime || obj.timestamp || obj.corte || obj.updated_at)) || null;
+    let last = null;
+    if (Array.isArray(data) && data.length) last = pickDate(data[data.length - 1]);
+    if (!last && data && typeof data === 'object') last = pickDate(data);
+    el.textContent = last ? ('Último corte: ' + String(last)) : 'Último corte: disponible';
+  } catch (e) {
+    el.textContent = 'Último corte: disponible';
+  }
+})();
+</script>
 
 <div class="cards">
   <a class="card" href="./indicadores">
