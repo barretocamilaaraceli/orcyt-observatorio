@@ -42,7 +42,3 @@ Los conflictos se codifican como **unidades relacionales** (secuencias de accion
 
 ### Nota metodológica
 El relevamiento automatizado depende de la disponibilidad de fuentes periodísticas y puede presentar rezagos o duplicaciones; se implementan rutinas de depuración y controles de calidad para mitigar sesgos.
-
-### Licencias
-- Código: MIT  
-- Datos e indicadores: CC BY 4.0 (atribución obligatoria)

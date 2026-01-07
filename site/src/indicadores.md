@@ -1,6 +1,6 @@
 ---
 title: Indicadores
-toc: false
+toc: true
 ---
 
 ```js

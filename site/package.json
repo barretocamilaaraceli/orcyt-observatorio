@@ -4,7 +4,7 @@
  "scripts": {
   "clean": "rimraf src/.observablehq/cache",
   "build": "observable build",
-  "postbuild": "node -e \"const fs=require('fs'); const path=require('path'); const files=['favicon.ico','favicon-32.png','favicon-48.png','favicon-96.png','apple-touch-icon.png','orcyt-logo.png','style.css']; for (const f of files) fs.copyFileSync(path.join('src',f), path.join('dist',f));\"",
+  "postbuild": "node -e \"const fs=require('fs'); const path=require('path'); const files=['favicon.ico','favicon-32.png','favicon-48.png','favicon-96.png','apple-touch-icon.png','orcyt-logo.png','style.css']; for (const f of files) fs.copyFileSync(path.join('src',f), path.join('dist',f)); fs.mkdirSync(path.join('dist','data'), {recursive:true}); fs.copyFileSync(path.join('src','data','serie_diaria.json'), path.join('dist','data','serie_diaria.json'));\"",
   "dev": "observable preview",
   "deploy": "observable deploy",
   "observable": "observable"
