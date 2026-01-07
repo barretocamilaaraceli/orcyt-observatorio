@@ -233,3 +233,23 @@ hr{
   padding: 6px 10px;
   margin: 10px 0 6px;
 }
+/* 1) Si la línea viene de tu navbar */
+.navbar{
+  border-bottom: none !important;
+  box-shadow: none !important;
+}
+
+/* 2) Si la línea viene del header del framework/theme */
+header,
+#observablehq-header,
+.observablehq-header,
+.observablehq-page-header{
+  border-bottom: none !important;
+  box-shadow: none !important;
+}
+
+/* 3) Marca alineada, sin menú */
+.navrow.navrow-brandonly{
+  justify-content: flex-start;
+  padding: 16px 0;
+}
