@@ -1,9 +1,9 @@
 ---
 toc: false
-title: ORCYT — Observatorio Regional de Conflictividad y Trabajo
+title: Observatorio Regional de Conflictividad y Trabajo
 ---
 
-## Observatorio Regional de Conflictividad y Trabajo
+# Observatorio Regional de Conflictividad y Trabajo
 <div class="badge" id="orcyt-lastcut-home">Último corte: cargando…</div>
 
 <script type="module">
