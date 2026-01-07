@@ -1,19 +1,11 @@
-// See https://observablehq.com/framework/config for documentation.
 export default {
   title: "ORCYT",
   root: "src",
 
-  // Estilo tipo “observatorio”: nav superior, sin sidebar
   sidebar: false,
   toc: false,
-  theme: "light",
   search: true,
-
-  // Aunque sidebar esté apagado, dejamos esto por orden (no molesta)
-  pages: [
-    { name: "Indicadores", path: "/indicadores" },
-    { name: "Metodología", path: "/metodologia" }
-  ],
+  theme: "light",
 
   head: `
 <link rel="icon" href="favicon.ico">
