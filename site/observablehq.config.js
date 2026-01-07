@@ -66,8 +66,9 @@ export default {
     </div>
 
     <div class="footer-bottom">
-      <span><b>ORCYT</b> · Observatorio Regional de Conflictividad y Trabajo</span>
-    </div>
+  <div><b>ORCYT</b> · Observatorio Regional de Conflictividad y Trabajo</div>
+  <div class="footer-meta">
+    Argentina · Entre Ríos · CP 3260 · Editora responsable: Camila Barreto
   </div>
 </div>
 

@@ -489,6 +489,10 @@ main p{
 main li{
   line-height: 1.6;
 }
+.footer-meta{
+  margin-top: 6px;
+  color: var(--footer-muted);
+}
 
 
 
