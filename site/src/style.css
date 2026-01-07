@@ -379,9 +379,19 @@ main a{
   overflow-wrap: anywhere;
 }
 :root{
-  --page-max: 980px;  /* probá 980; si lo querés más ancho: 1040 */
+  --page-max: 1040px;
   --page-pad: 18px;
 }
+main{
+  max-width: var(--page-max);
+  margin: 0 auto;
+}
+.navbar .wrap,
+.footer .wrap,
+.wrap.footer{
+  max-width: var(--page-max);
+}
+
 main{
   max-width: var(--page-max) !important;
   margin: 0 auto !important;
@@ -448,6 +458,36 @@ main h3{ margin-top: 18px; }
 /* Tarjetas un toque más “premium” */
 .card{
   border-radius: 16px;
+}
+body{ background:#fafafa; }
+
+main{
+  background:#fff;
+  border: 1px solid rgba(0,0,0,.05);
+  border-radius: 18px;
+  padding: 22px 22px;
+  margin-top: 18px;
+}
+.card:focus{
+  outline: 3px solid rgba(63,58,53,.25);
+  outline-offset: 2px;
+}
+.hr-soft{
+  height: 1px;
+  background: rgba(0,0,0,.08);
+  border: 0;
+  margin: 18px 0;
+}
+main h2{
+  font-size: 26px;
+  letter-spacing: -0.2px;
+}
+main p{
+  font-size: 16px;
+  line-height: 1.7;
+}
+main li{
+  line-height: 1.6;
 }
 
 
