@@ -1,13 +1,21 @@
 // See https://observablehq.com/framework/config for documentation.
 export default {
-  title: "ORCYT — Observatorio Regional de Conflictividad y Trabajo",
+  // Corto para que el sidebar no quede feo
+  title: "ORCYT",
+
   root: "src",
 
-  // (Opcional) dejá el sidebar explícito, así no vuelven ejemplos
   pages: [
     { name: "Indicadores", path: "/indicadores" },
     { name: "Metodología", path: "/metodologia" }
   ],
+
+  theme: "light",
+  search: true,
+  toc: true,
+
+  // Activamos CSS propio
+  style: "style.css",
 
   head: `
 <link rel="icon" href="favicon.ico">
@@ -17,19 +25,20 @@ export default {
 `,
 
   header: `
-<div style="display:flex;align-items:center;gap:.6rem;padding:.6rem 0;">
-  <a href="./" style="display:flex;align-items:center;gap:.6rem;text-decoration:none;font-weight:800;">
-    <img src="orcyt-logo.png" alt="ORCYT" height="28" style="display:block;">
-    <span>ORCYT</span>
+<div class="orcyt-topbar">
+  <a class="orcyt-brand" href="./">
+    <img class="orcyt-logo" src="orcyt-logo.png" alt="ORCYT">
+    <div class="orcyt-brandtext">
+      <div class="orcyt-name">ORCYT</div>
+      <div class="orcyt-subtitle">Observatorio Regional de Conflictividad y Trabajo</div>
+    </div>
   </a>
 </div>
 `,
 
   footer: `
-<div style="padding:.75rem 0; font-size: 12px;">
+<div class="orcyt-footer">
   <b>ORCYT</b> · Datos y contenidos: CC BY 4.0 · Código: MIT
 </div>
 `
 };
-
-

@@ -1,0 +1,48 @@
+/* Barra superior: más “observatorio”, menos demo */
+.orcyt-topbar{
+  display:flex;
+  align-items:center;
+  padding: 14px 0;
+  border-bottom: 1px solid rgba(0,0,0,.08);
+  margin-bottom: 10px;
+}
+
+.orcyt-brand{
+  display:flex;
+  align-items:center;
+  gap: 12px;
+  text-decoration:none;
+  color: inherit;
+}
+
+.orcyt-logo{
+  height: 60px;   /* acá está el cambio clave */
+  width: auto;
+  display:block;
+}
+
+.orcyt-name{
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 1.05;
+  letter-spacing: .2px;
+}
+
+.orcyt-subtitle{
+  font-size: 13px;
+  line-height: 1.2;
+  opacity: .75;
+  margin-top: 2px;
+}
+
+/* Footer más prolijo */
+.orcyt-footer{
+  padding: 14px 0;
+  font-size: 12px;
+  opacity: .85;
+}
+
+/* Opcional: achica un poco el H1 del contenido si te queda duplicado */
+main h1{
+  margin-top: 0.9rem;
+}
