@@ -2,7 +2,7 @@
 toc: false
 ---
 
-# ORCYT
+## ORCYT
 ## Observatorio Regional de Conflictividad y Trabajo
 
 **Región Litoral Centro · Entre Ríos y Santa Fe**  
@@ -59,4 +59,3 @@ La estrategia de relevamiento, codificación y construcción de indicadores se d
 
 ## 📅 Actualización
 Los datos publicados corresponden al último corte disponible del relevamiento.
-```
