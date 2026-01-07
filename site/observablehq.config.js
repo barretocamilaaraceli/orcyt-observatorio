@@ -24,7 +24,7 @@ export default {
 <link rel="stylesheet" href="style.css">
 `,
 
-  header: `
+ header: `
 <div class="navbar">
   <div class="wrap navrow navrow-brandonly">
     <a class="brand" href="./">

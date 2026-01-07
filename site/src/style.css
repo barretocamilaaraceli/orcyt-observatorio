@@ -262,3 +262,29 @@ header,
   .logo{ height: 48px; }
   .brandsub{ display: none; }
 }
+/* El header NO debe quedarse pegado ni tapar contenido */
+.navbar,
+header,
+#observablehq-header,
+.observablehq-header,
+.observablehq-page-header{
+  position: static !important;
+  top: auto !important;
+  z-index: auto !important;
+}
+
+/* Por si el theme mete separadores raros */
+.navbar,
+header,
+#observablehq-header,
+.observablehq-header,
+.observablehq-page-header{
+  border-bottom: none !important;
+  box-shadow: none !important;
+}
+
+/* Que el header alinee con la columna de lectura (evita “extremo izquierdo”) */
+.navbar .wrap{
+  max-width: 820px;
+}
+
