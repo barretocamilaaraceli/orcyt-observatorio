@@ -26,7 +26,7 @@ export default {
 
   header: `
 <div class="navbar">
-  <div class="wrap navrow">
+  <div class="wrap navrow navrow-brandonly">
     <a class="brand" href="./">
       <img class="logo" src="orcyt-logo.png" alt="ORCYT">
       <span class="brandtext">
@@ -34,12 +34,6 @@ export default {
         <span class="brandsub">Observatorio Regional de Conflictividad y Trabajo</span>
       </span>
     </a>
-
-    <nav class="menu">
-      <a href="./indicadores">Indicadores</a>
-      <a href="./metodologia">Metodología</a>
-      <a href="https://github.com/barretocamilaaraceli/orcyt-observatorio" target="_blank" rel="noreferrer">Repositorio</a>
-    </nav>
   </div>
 </div>
 `,
