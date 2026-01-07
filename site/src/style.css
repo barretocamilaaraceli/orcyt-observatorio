@@ -1,111 +1,4 @@
 :root{
-  --ink:#2b2b2b;      /* texto gris oscuro */
-  --muted:#6b7280;    /* texto secundario */
-  --line:rgba(0,0,0,.10);
-  --bg:#ffffff;
-}
-
-body{ color: var(--ink); }
-
-/* Links: sin azul chillón */
-a{ color: var(--ink); }
-a:visited{ color: var(--ink); }
-a:hover{ text-decoration: underline; }
-
-.orcyt-topbar{
-  display:flex;
-  align-items:center;
-  padding: 14px 0;
-  border-bottom: 1px solid var(--line);
-  margin-bottom: 10px;
-}
-
-.orcyt-brand{
-  display:flex;
-  align-items:center;
-  gap: 12px;
-  text-decoration:none;
-  color: var(--ink);
-}
-
-.orcyt-logo{
-  height: 64px;
-  width: auto;
-  display:block;
-}
-
-.orcyt-name{
-  font-weight: 800;
-  font-size: 20px;
-  line-height: 1.05;
-  letter-spacing: .2px;
-  color: var(--ink);
-}
-
-.orcyt-subtitle{
-  font-size: 13px;
-  line-height: 1.2;
-  color: var(--muted);
-  margin-top: 2px;
-}
-
-.orcyt-footer{
-  padding: 14px 0;
-  font-size: 12px;
-  color: var(--muted);
-}
-.wrap{
-  max-width: 1100px;
-  margin: 0 auto;
-  padding: 0 16px;
-}
-
-.topstrip{
-  font-size: 12px;
-  color: var(--muted);
-  border-bottom: 1px solid var(--line);
-  background: var(--bg);
-}
-
-.topstrip a{
-  color: var(--muted);
-  text-decoration:none;
-}
-
-.topstrip a:hover{
-  text-decoration: underline;
-}
-
-.navbar{
-  background: var(--bg);
-  border-bottom: 1px solid var(--line);
-}
-
-.navrow{
-  display:flex;
-  align-items:center;
-  justify-content:space-between;
-  padding: 14px 0;
-  gap: 16px;
-}
-
-.menu{
-  display:flex;
-  align-items:center;
-  gap: 18px;
-  font-weight: 600;
-}
-
-.menu a{
-  text-decoration:none;
-  color: var(--ink);
-}
-
-.menu a:hover{
-  text-decoration: underline;
-}
-
-:root{
   --ink:#2b2b2b;
   --muted:#6b7280;
   --line:rgba(0,0,0,.10);
@@ -113,15 +6,34 @@ a:hover{ text-decoration: underline; }
 }
 
 body{ color: var(--ink); }
+
+/* Links: sobrios (sin azul) */
 a{ color: var(--ink); }
 a:visited{ color: var(--ink); }
+a:hover{ text-decoration: underline; }
 
+/* Layout general */
 .wrap{
   max-width: 1100px;
   margin: 0 auto;
   padding: 0 16px;
 }
 
+main{
+  max-width: 820px; /* ancho cómodo de lectura */
+}
+
+main p{ line-height: 1.55; }
+main h2{ margin-top: 22px; }
+main h3{ margin-top: 16px; }
+
+hr{
+  border: 0;
+  border-top: 1px solid var(--line);
+  margin: 18px 0;
+}
+
+/* Header superior */
 .muted{ color: var(--muted); }
 .sep{ margin: 0 8px; color: var(--muted); }
 
@@ -132,11 +44,17 @@ a:visited{ color: var(--ink); }
   background: var(--bg);
 }
 
+.topstrip .wrap{
+  display:flex;
+  align-items:center;
+  justify-content: space-between;
+  padding: 6px 16px;
+}
+
 .topstrip a{
   color: var(--muted);
   text-decoration:none;
 }
-
 .topstrip a:hover{ text-decoration: underline; }
 
 .navbar{
@@ -161,7 +79,7 @@ a:visited{ color: var(--ink); }
 }
 
 .logo{
-  height: 56px; /* subí a 64 si querés más presencia */
+  height: 64px;  /* si querés más chico: 56px */
   width:auto;
   display:block;
 }
@@ -185,24 +103,75 @@ a:visited{ color: var(--ink); }
   color: var(--muted);
 }
 
+/* Menú */
 .menu{
   display:flex;
   align-items:center;
-  gap: 18px;
+  gap: 10px;
   font-weight: 600;
 }
 
 .menu a{
   text-decoration:none;
   color: var(--ink);
+  padding: 8px 10px;
+  border-radius: 10px;
 }
 
-.menu a:hover{ text-decoration: underline; }
+.menu a:hover{
+  background: rgba(0,0,0,.06);
+  text-decoration:none;
+}
 
+/* Footer */
 .footer{
   padding: 18px 0;
   font-size: 12px;
   color: var(--muted);
   border-top: 1px solid var(--line);
   margin-top: 28px;
+}
+
+/* Tarjetas home */
+.cards{
+  display:grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px;
+  margin: 14px 0 22px;
+}
+
+.card{
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  padding: 14px 14px 12px;
+  text-decoration:none;
+  color: var(--ink);
+  background: var(--bg);
+}
+
+.card:hover{
+  background: rgba(0,0,0,.02);
+}
+
+.card-title{
+  font-weight: 800;
+  font-size: 16px;
+  margin-bottom: 6px;
+}
+
+.card-text{
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.35;
+  margin-bottom: 10px;
+}
+
+.card-cta{
+  font-weight: 700;
+  font-size: 13px;
+}
+
+@media (max-width: 900px){
+  .cards{ grid-template-columns: 1fr; }
+  .navrow{ flex-direction: column; align-items: flex-start; }
 }
