@@ -1,6 +1,6 @@
 // See https://observablehq.com/framework/config for documentation.
 export default {
-  title: "ORCYT",
+  title: "Observatorio Regional de Conflictividad y Trabajo",
   root: "src",
 
   // Nav superior (sin sidebar)

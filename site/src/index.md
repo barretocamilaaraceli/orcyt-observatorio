@@ -1,5 +1,6 @@
 ---
 toc: false
+title: ORCYT — Observatorio Regional de Conflictividad y Trabajo
 ---
 
 ## Observatorio Regional de Conflictividad y Trabajo
