@@ -104,3 +104,105 @@ a:hover{ text-decoration: underline; }
 .menu a:hover{
   text-decoration: underline;
 }
+
+:root{
+  --ink:#2b2b2b;
+  --muted:#6b7280;
+  --line:rgba(0,0,0,.10);
+  --bg:#ffffff;
+}
+
+body{ color: var(--ink); }
+a{ color: var(--ink); }
+a:visited{ color: var(--ink); }
+
+.wrap{
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+.muted{ color: var(--muted); }
+.sep{ margin: 0 8px; color: var(--muted); }
+
+.topstrip{
+  font-size: 12px;
+  color: var(--muted);
+  border-bottom: 1px solid var(--line);
+  background: var(--bg);
+}
+
+.topstrip a{
+  color: var(--muted);
+  text-decoration:none;
+}
+
+.topstrip a:hover{ text-decoration: underline; }
+
+.navbar{
+  background: var(--bg);
+  border-bottom: 1px solid var(--line);
+}
+
+.navrow{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  padding: 14px 0;
+  gap: 16px;
+}
+
+.brand{
+  display:flex;
+  align-items:center;
+  gap: 12px;
+  text-decoration:none;
+  color: var(--ink);
+}
+
+.logo{
+  height: 56px; /* subí a 64 si querés más presencia */
+  width:auto;
+  display:block;
+}
+
+.brandtext{
+  display:flex;
+  flex-direction:column;
+  gap: 2px;
+}
+
+.brandname{
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 1.05;
+  letter-spacing: .2px;
+}
+
+.brandsub{
+  font-size: 13px;
+  line-height: 1.2;
+  color: var(--muted);
+}
+
+.menu{
+  display:flex;
+  align-items:center;
+  gap: 18px;
+  font-weight: 600;
+}
+
+.menu a{
+  text-decoration:none;
+  color: var(--ink);
+}
+
+.menu a:hover{ text-decoration: underline; }
+
+.footer{
+  padding: 18px 0;
+  font-size: 12px;
+  color: var(--muted);
+  border-top: 1px solid var(--line);
+  margin-top: 28px;
+}
