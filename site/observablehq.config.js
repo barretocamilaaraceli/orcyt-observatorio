@@ -31,6 +31,21 @@ export default {
     </div>
   </a>
 </div>
+
+
+<style>
+  /* Header ORCYT: que no herede azul de links */
+  .orcyt-topbar a,
+  .orcyt-topbar a:visited,
+  .orcyt-topbar a:hover,
+  .orcyt-topbar a:active{
+    color: #2b2b2b !important;
+    text-decoration: none !important;
+  }
+  .orcyt-name{
+    color: #2b2b2b !important;
+  }
+</style>
 `,
 
   footer: `
