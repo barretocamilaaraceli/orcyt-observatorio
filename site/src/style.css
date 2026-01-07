@@ -79,7 +79,7 @@ hr{
 }
 
 .logo{
-  height: 64px;  /* si querés más chico: 56px */
+  height: 74px;  /* si querés más chico: 56px */
   width:auto;
   display:block;
 }
@@ -373,12 +373,64 @@ main li{
   word-break: normal;
 }
 
-/* Español: ayuda a que hyphens funcione mejor */
-html{ lang: es; }
-
 /* Evitar que títulos/links rompan feo */
 main h1, main h2, main h3, main h4,
 main a{
   overflow-wrap: anywhere;
 }
+:root{
+  --page-max: 980px;  /* probá 980; si lo querés más ancho: 1040 */
+  --page-pad: 18px;
+}
+main{
+  max-width: var(--page-max) !important;
+  margin: 0 auto !important;
+  padding-left: var(--page-pad) !important;
+  padding-right: var(--page-pad) !important;
+}
+/* ===== Footer en franja (gris topo/oscuro) ===== */
+:root{
+  --footer-bg: #3f3a35;     /* topo oscuro */
+  --footer-ink: #f2f0ec;    /* texto claro */
+  --footer-muted: rgba(242,240,236,.78);
+}
+
+.footerband{
+  background: var(--footer-bg);
+  color: var(--footer-ink);
+  margin-top: 34px;
+  padding: 18px 0;
+}
+
+.footerband a{
+  color: var(--footer-ink);
+  text-decoration: none;
+}
+
+.footerband a:hover{
+  text-decoration: underline;
+}
+
+.footerband .footer-title{
+  color: var(--footer-ink);
+  font-weight: 800;
+  margin-bottom: 6px;
+}
+
+.footerband .footer-text{
+  color: var(--footer-muted);
+}
+
+.footerband .footer-bottom{
+  margin-top: 14px;
+  padding-top: 14px;
+  border-top: 1px solid rgba(242,240,236,.18);
+  color: var(--footer-muted);
+}
+
+/* Si tenías border-top en .footer por CSS anterior, lo anulamos */
+.footer{
+  border-top: none !important;
+}
+
 

@@ -9,7 +9,6 @@ export default {
   search: true,
   theme: "light",
 
-  // Queda como “orden lógico” del sitio (aunque sidebar esté apagado)
   pages: [
     { name: "Inicio", path: "/" },
     { name: "Indicadores", path: "/indicadores" },
@@ -18,19 +17,18 @@ export default {
 
   head: `
 <link rel="icon" href="favicon.ico">
-<link rel="icon" type="image/png" href="favicon-32.png" sizes="40x40">
+<link rel="icon" type="image/png" href="favicon-32.png" sizes="32x32">
 <link rel="icon" type="image/png" href="favicon-96.png" sizes="96x96">
 <link rel="apple-touch-icon" href="apple-touch-icon.png" sizes="180x180">
 <link rel="stylesheet" href="style.css">
 <script>
-  const TITLE = "Observatorio Regional de Conflictividad y Trabajo — ORCYT";
+  const TITLE = "Observatorio regional — ER/SF · ORCYT";
   document.title = TITLE;
   setTimeout(() => { document.title = TITLE; }, 0);
 </script>
-
 `,
 
- header: `
+  header: `
 <div class="navbar">
   <div class="wrap navrow navrow-brandonly">
     <a class="brand" href="./">
@@ -45,38 +43,40 @@ export default {
 `,
 
   footer: `
-<div class="wrap footer">
-  <div class="footer-grid">
-    <div class="footer-block">
-      <div class="footer-title">Contacto</div>
-      <a href="mailto:orcyt.observatorio@gmail.com">orcyt.observatorio@gmail.com</a>
+<div class="footerband">
+  <div class="wrap footer">
+    <div class="footer-grid">
+      <div class="footer-block">
+        <div class="footer-title">Contacto</div>
+        <a href="mailto:orcyt.observatorio@gmail.com">orcyt.observatorio@gmail.com</a>
+      </div>
+
+      <div class="footer-block">
+        <div class="footer-title">Licencias</div>
+        <div class="footer-text"><b>Código:</b> MIT</div>
+        <div class="footer-text"><b>Datos e indicadores:</b> CC BY 4.0 (atribución obligatoria)</div>
+      </div>
+
+      <div class="footer-block">
+        <div class="footer-title">Actualización</div>
+        <div id="orcyt-lastcut" class="footer-text">Último corte: cargando…</div>
+        <div class="footer-text">Frecuencia: cada 12 horas</div>
+      </div>
     </div>
 
-    <div class="footer-block">
-      <div class="footer-title">Licencias</div>
-      <div class="footer-text"><b>Código:</b> MIT</div>
-      <div class="footer-text"><b>Datos e indicadores:</b> CC BY 4.0 (atribución obligatoria)</div>
+    <div class="footer-bottom">
+      <span><b>ORCYT</b> · Observatorio Regional de Conflictividad y Trabajo</span>
     </div>
-
-    <div class="footer-block">
-      <div class="footer-title">Actualización</div>
-      <div id="orcyt-lastcut" class="footer-text">Último corte: cargando…</div>
-      <div class="footer-text">Frecuencia: cada 12 horas</div>
-    </div>
-  </div>
-
-  <div class="footer-bottom">
-    <span><b>ORCYT</b> · Observatorio Regional de Conflictividad y Trabajo</span>
   </div>
 </div>
 
 <script type="module">
 (async () => {
-  const el = document.getElementById('orcyt-lastcut');
+  const el = document.getElementById("orcyt-lastcut");
   if (!el) return;
 
   try {
-    const res = await fetch('./data/serie_diaria.json', { cache: 'no-store' });
+    const res = await fetch("./data/serie_diaria.json", { cache: "no-store" });
     const data = await res.json();
 
     const pickDate = (obj) =>
@@ -84,11 +84,11 @@ export default {
 
     let last = null;
     if (Array.isArray(data) && data.length) last = pickDate(data[data.length - 1]);
-    if (!last && data && typeof data === 'object') last = pickDate(data);
+    if (!last && data && typeof data === "object") last = pickDate(data);
 
-    el.textContent = last ? ('Último corte: ' + String(last)) : 'Último corte: disponible';
+    el.textContent = last ? ("Último corte: " + String(last)) : "Último corte: disponible";
   } catch (e) {
-    el.textContent = 'Último corte: disponible';
+    el.textContent = "Último corte: disponible";
   }
 })();
 </script>
