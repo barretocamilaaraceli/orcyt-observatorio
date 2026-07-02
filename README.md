@@ -22,7 +22,7 @@ Exportación SQL — vuelca el dataset a una base SQLite con vistas analíticas 
 Dashboard — genera un HTML interactivo con filtros, gráficos y tabla de eventos.
 
 ## Medios monitoreados
--**Entre Ríos:** Análisis Digital · UNO Entre Ríos · El Miércoles Digital · El Heraldo de Concordia · El Día de Gualeguaychú · La Calle (Concepción del Uruguay) · AHORA · AIM Digital · APF Digital ·
+- **Entre Ríos:** Análisis Digital · UNO Entre Ríos · El Miércoles Digital · El Heraldo de Concordia · El Día de Gualeguaychú · La Calle (Concepción del Uruguay) · AHORA · AIM Digital · APF Digital ·
 - **Santa Fe:** El Litoral · Aire de Santa Fe · UNO Santa Fe · Santa Fe Noticias · Pausa.
 - **Nacionales (con filtro territorial):** InfoGremiales · La Izquierda Diario.
 > Nota: el relevamiento automatizado depende de la disponibilidad de fuentes periodísticas y puede presentar rezagos o duplicaciones; se implementan rutinas de depuración y controles de calidad para mitigar sesgos.
