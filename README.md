@@ -22,11 +22,17 @@ Exportación SQL — vuelca el dataset a una base SQLite con vistas analíticas 
 Dashboard — genera un HTML interactivo con filtros, gráficos y tabla de eventos.
 
 ## Medios monitoreados
-Entre Ríos: Análisis Digital · UNO Entre Ríos · El Miércoles Digital · El Heraldo de Concordia · El Día de Gualeguaychú · La Calle (Concepción del Uruguay) · AHORA · AIM Digital · APF Digital ·
-Santa Fe: El Litoral · Aire de Santa Fe · UNO Santa Fe · Santa Fe Noticias · Pausa.
-Nacionales (con filtro territorial): InfoGremiales · La Izquierda Diario.
-
+-**Entre Ríos:** Análisis Digital · UNO Entre Ríos · El Miércoles Digital · El Heraldo de Concordia · El Día de Gualeguaychú · La Calle (Concepción del Uruguay) · AHORA · AIM Digital · APF Digital ·
+- **Santa Fe:** El Litoral · Aire de Santa Fe · UNO Santa Fe · Santa Fe Noticias · Pausa.
+- **Nacionales (con filtro territorial):** InfoGremiales · La Izquierda Diario.
 > Nota: el relevamiento automatizado depende de la disponibilidad de fuentes periodísticas y puede presentar rezagos o duplicaciones; se implementan rutinas de depuración y controles de calidad para mitigar sesgos.
+
+**Clasificación sectorial**
+La novedad central de la versión actual es la clasificación por ramas de actividad económica según CLANAE 2010, articulada con la distinción público/privado del MTEySS/DEyERT.
+El sistema detecta 28 ramas ordenadas de mayor a menor especificidad:
+- Sector público: Educación pública (P85) · Salud pública (Q86) · Poder Judicial (O84) · Seguridad (O84) · Servicios públicos/APSE (D/E) · Administración municipal (O84) · Administración pública general (O84).
+- Sector privado (especificidades del Litoral): Industria avícola (C10) · Industria láctea (C10) · Industria cárnica/frigoríficos (C10) · Industria citrícola (C10) · Industria arrocera (C10) · Molinería y oleaginosas (C10) · Alimenticia general (C10) · Forestal/celulosa (C16) · Textil/indumentaria (C13) · Metalúrgica/metalmecánica (C24–C25) · Automotriz/autopartista (C29) · Manufactura general (C) · Construcción (F41–F43) · Agro/rural (A01) · Comercio (G) · Gastronomía/hotelería (I) · Transporte y logística (H49) · Bancario/financiero (K64) · Salud privada (Q86) · Comunicaciones/prensa (J) · Servicios varios (N).
+**La clasificación se realiza por co-ocurrencia de keywords en título + texto, con iteración en orden de especificidad (primero las ramas más específicas del Litoral, luego las genéricas) para minimizar falsos positivos.**
 
 ## Estructura del repositorio
 - `site/` — Sitio web (Observable Framework) y assets (CSS, logo, favicons).
