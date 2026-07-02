@@ -15,11 +15,11 @@ El proyecto combina relevamiento automatizado de prensa regional, etiquetado por
 
 ## ¿Qué hace este sistema?
 El pipeline ejecuta cinco fases secuenciales:
-Scraping — raspa medios regionales de Entre Ríos y Santa Fe en busca de noticias con indicadores de conflictividad laboral.
-Deduplicación — elimina noticias duplicadas por UID exacto y por similitud textual (fuzzy matching con control territorial y temporal).
-Etiquetado — asigna a cada evento: fecha del hecho, departamento, ciudad, sector (público/privado/mixto) y rama de actividad según CLANAE.
-Exportación SQL — vuelca el dataset a una base SQLite con vistas analíticas para consulta.
-Dashboard — genera un HTML interactivo con filtros, gráficos y tabla de eventos.
+- **Scraping** — raspa medios regionales de Entre Ríos y Santa Fe en busca de noticias con indicadores de conflictividad laboral.
+- **Deduplicación** — elimina noticias duplicadas por UID exacto y por similitud textual (fuzzy matching con control territorial y temporal).
+- **Etiquetado** — asigna a cada evento: fecha del hecho, departamento, ciudad, sector (público/privado/mixto) y rama de actividad según CLANAE.
+- **Exportación SQL** — vuelca el dataset a una base SQLite con vistas analíticas para consulta.
+- **Dashboard** — genera un HTML interactivo con filtros, gráficos y tabla de eventos.
 
 ## Medios monitoreados
 - **Entre Ríos:** Análisis Digital · UNO Entre Ríos · El Miércoles Digital · El Heraldo de Concordia · El Día de Gualeguaychú · La Calle (Concepción del Uruguay) · AHORA · AIM Digital · APF Digital ·
